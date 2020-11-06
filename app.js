@@ -23,11 +23,16 @@ let maxOfThree = function(num1, num2, num3) {
       return num3
 }
 
-console.log(maxOfThree(15, 6, 8))
+console.log(maxOfThree(15, 6, 88))
 
 // 3. Define a function, as a function declaration, `isCharAVowel` that takes a character as an argument and returns true if it is a vowel, false otherwise.
 
+function isCharAVowel(char){
+  char = char.toLowerCase(); //with strings, converting to lower or upper is needed
+  return ('aeiouy'.indexOf(char) > -1) // checking string 'aeiouy' for character passed into char argument 
+}
 
+console.log(isCharAVowel('P'))
 
 // 4. Define a function, as a function expression, `sumArray` that takes an array of numbers and returns the sum of those numbers. For example, `sumArray([2, 4, 5]);` would return `11`.
 
