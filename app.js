@@ -47,17 +47,28 @@ let sumArray = function(nums) {
 
 console.log(sumArray([1, 2, 3, 8]));
 
+
 // 5. Define a function, as a function declaration, `multiplyArray` that takes an array of numbers and returns the product of those numbers. For example, `multiplyArray([2, 4, 5]);` would return `40`.
 
+function multiplyArray(num) { 
+  let total = 1;
+  for (let i = 0; i < num.length; i++) {
+    total *= num[i];
+  }
+  return total;
+}
 
+console.log(multiplyArray([2, 4, 5]));
 
 // 6. Define a function, as a function expression, `numArgs` that returns the number of arguments passed to the function when called.
 
+let numArgs = function(...args) {
 
+}
 
 // 7. Define a function, as a function declaration, `reverseString` that takes a string, reverses the characters and returns it. For example, `reverseString('rockstar');` would return the string "ratskcor".
 
-//tip decriminting forLoop is ONE option, not the only opetion (check Tyler's post in Slack)
+//tip decriminting forLoop is ONE option, not the only option (check Tyler's post in Slack)
 
 // 8. Define a function, as a function expression, `longestStringInArray` that takes an array of strings as an argument and returns the longest string's length.
 
