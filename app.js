@@ -37,6 +37,15 @@ console.log(isCharAVowel('P'))
 // 4. Define a function, as a function expression, `sumArray` that takes an array of numbers and returns the sum of those numbers. For example, `sumArray([2, 4, 5]);` would return `11`.
 
 
+let sumArray = function(nums) {
+  let sum = 0; //start at 0
+  nums.forEach(function(total) {
+    sum += total;
+  });
+  return sum;
+}
+
+console.log(sumArray([1, 2, 3, 8]));
 
 // 5. Define a function, as a function declaration, `multiplyArray` that takes an array of numbers and returns the product of those numbers. For example, `multiplyArray([2, 4, 5]);` would return `40`.
 
