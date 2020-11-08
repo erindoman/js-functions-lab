@@ -93,3 +93,13 @@ let longestStringInArray = function(arr){
 console.log(longestStringInArray(["a", "abc", "ab", "abcd"]))
 
 // 9. Define a function, as a function declaration, `stringsLongerThan` that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, `stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);` would return `["hello", "morning"]`.
+
+//for each word in the string, if string length is larger than number passed through, print it
+
+function stringsLongerThan(arr, arg) { 
+ return arr.filter(function(string) {
+   return (string.length > arg);
+ });
+}
+
+console.log(stringsLongerThan(["say", "hello", "in", "the", "morning"], 3))
