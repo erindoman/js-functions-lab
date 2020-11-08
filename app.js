@@ -71,7 +71,14 @@ console.log(numArgs(1, 2, 3, 4, 7, 9, 'cat', 'dog'))
 
 // 7. Define a function, as a function declaration, `reverseString` that takes a string, reverses the characters and returns it. For example, `reverseString('rockstar');` would return the string "ratskcor".
 
-//tip decriminting forLoop is ONE option, not the only option (check Tyler's post in Slack)
+function reverseString(str) {
+  let reversedString = "";
+  for(var i = str.length - 1; i >= 0; i--){ 
+  reversedString += str[i]; 
+  }
+  return reversedString;
+}
+console.log(reverseString("hello"))
 
 // 8. Define a function, as a function expression, `longestStringInArray` that takes an array of strings as an argument and returns the longest string's length.
 
