@@ -78,10 +78,18 @@ function reverseString(str) {
   }
   return reversedString;
 }
-console.log(reverseString("hello"))
+console.log(reverseString("rockstar"))
 
 // 8. Define a function, as a function expression, `longestStringInArray` that takes an array of strings as an argument and returns the longest string's length.
 
+let longestStringInArray = function(arr){
+  let str = '';
+  arr.forEach(function(string) {
+    if (string.length > str) str = string.length;
+  });
+  return str
+}
 
+console.log(longestStringInArray(["a", "abc", "ab", "abcd"]))
 
 // 9. Define a function, as a function declaration, `stringsLongerThan` that takes an array of strings and a number as arguments; and returns an array of the strings that are longer than the number passed in. For example, `stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3);` would return `["hello", "morning"]`.
